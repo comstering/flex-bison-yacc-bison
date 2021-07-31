@@ -2,11 +2,14 @@
 %{
 #include <stdio.h>
 #include <stdlib.h>
-#include "fb3-1.h"
+#include "calc.h"
 %}
+
+%define parse.error verbose
+
 %union {
- struct ast *a;
- double d;
+    struct ast *a;
+    double d;
 }
 /* declare tokens */
 %token <d> NUMBER

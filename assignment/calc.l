@@ -1,8 +1,8 @@
 /* recognize tokens for the calculator */
 %option noyywrap nodefault yylineno
 %{
-# include "fb3-1.h"
-# include "fb3-1.tab.h"
+# include "calc.h"
+# include "calc.tab.h"
 %}
 
 /* float exponent */
